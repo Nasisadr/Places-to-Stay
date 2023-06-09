@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<!-- This loads the script index.js, and specifies that our
+        JavaScript will be treated as an ECMAScript 6 module-->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+		<script type='text/javascript' src='https://unpkg.com/leaflet@1.7.1/dist/leaflet.js'></script>
+		<!--map-->
+		<script type="module" src="index.js"></script>
+	</head>
+	<body>
+		<!--search by location -->
+		<h1>Search accommodation by location!</h1>
+		Location: <input id="searchterm" />	<input type="button" id="ajaxButton" value="Search!" />
+		
+		<div id="loginform">
+			 <label for="username" id="usernamelbl">User name:</label>
+             <input type="text" id="username" name="username"> 
+			 <label for="password" id="passwordlbl">password:</label>
+             <input type="text" id="password" name="password">
+			 <button type="button" id="ajaxloginbtn" value="login!">Login</button>
+			 <button type="button" id="btnlogout" value="logout!">Logout</button>
+	         
+		</div>
+		<div id="userdetail">
+			
+		</div>
+
+        <div id="map1" style="width: 800px; height: 600px;"></div>
+		<br />
+
+        
+
+		<div id="userdetail"></div>
+		<div id="results"></div>
+	</body>
+</html>
